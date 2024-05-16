@@ -1,4 +1,11 @@
-#bin/bash
+#!/bin/bash
+
+echo ' mmmmmm  mmmm  mmmmm  mmmmm  mm   m               #     '
+echo '     #" m"  "m #   "#   #    #"m  #         mmm   # mm  '
+echo '   m#   #    # #mmmm"   #    # #m #        #   "  #"  # '
+echo '  m"    #    # #   "m   #    #  # #         """m  #   # '
+echo ' ##mmmm  #mm#  #    " mm#mm  #   ##   #    "mmm"  #   # '
+
 # user=$(whoami)
 red="\e[31m"
  echo "Only run this script if you have done the following: "
