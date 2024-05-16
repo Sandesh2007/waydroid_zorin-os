@@ -36,5 +36,5 @@ if [[ "$answer1" == "yes" || "$answer1" == "y" ]]; then
         echo "So you changed your mind!"
     fi
 else 
-    echo ""
+    echo " "
 fi
