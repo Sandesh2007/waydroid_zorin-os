@@ -9,10 +9,10 @@ echo ' ##mmmm  #mm#  #    " mm#mm  #   ##   #    "mmm"  #   # '
 # user=$(whoami)
 red="\e[31m"
  echo "Only run this script if you have done the following: "
- echo "I recommend to download the Gapps system.img "
+ echo "Downloaded both system.img and vendor.img files"
  echo "Make sure you extract both system.img & vendor.img and keep it in Downloads directory "
- echo "It should like this"
- echo "/home/$user/Downloads/system.img|vendor.img"
+ echo "It should like this :"
+ echo "     /home/$user/Downloads/system.img|vendor.img"
 
  echo "Press any key to start the installation ..."
  read -n 1 -s any_key_pressed
@@ -35,7 +35,8 @@ red="\e[31m"
  else
      echo ""
    
-# fi
+fi
+
 #checking files is there or not 
 check_system(){
     system="$HOME/Downloads/system.img"|| "$HOME/Downloads/System.img"
@@ -97,7 +98,8 @@ check_waydroidscript
 if [ $? -eq 0 ]; then
     echo "found waydroid_script at: $waydroid_dir"
     echo "continue to waydroid scripts to install gapps/magisk/arms translator"
+    echo "Script completeted sucessfully !"
 else
-    echo "Script complete"
+    echo "waydroid_script is not in your computer (important)"
     echo "It is recommended to use waydroid script to install arm translator and gapps to install any arm/android app" 
 fi
